@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ecf2f8;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+#Testimonial-grid-container {
+  padding: 5% 3%;
+}
+
+#Testimonial-1 {
+  background-color: #7541c8;
+  color: #ffffff;
+  position: relative;
+  z-index: 0;
+}
+
+#quote {
+   position: absolute;
+   right: 15%;
+   top: 0;
+
+}
+
+#Testimonial-2{
+  background-color: #48556a;
+  color: #ffffff;
+}
+
+#Testimonial-3,
+#Testimonial-5{
+  background-color: #ffffff;
+  color: #48556a;
+}
+
+#Testimonial-4{
+  background-color: #19212e;
+  color: #ffffff;
+}
+
+.grid-item {
+  margin-bottom: 20px;/*it appears that the padding seems to be 20px and same goes for the margin-bottom*/
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  z-index: 3;
+}
+
+.header img {
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 1px solid #7541c8;
+}
+
+.grid-item {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  font-size: 13px;
+}
+
+.grid-item h4 {
+  margin-bottom: 20px;
+  font- size: 1.2rem;
+  font-weight: 600;
+}
+
+.grid-item p {
+  opacity: 70%;
+}
+
+.header .name {
+  opacity: 100%;
+  font-size: 1rem;
+}
+
+@media (min-width: 576px) {
+  #Testimonial-grid-container,
+  #main-left-container,
+  #top,
+  #bottom {
+    display: flex;
+  }
+
+  #Testimonial-grid-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  #main-left-container {
+    flex-direction: column;
+    flex-basis: 80%;
+  }
+
+  #main-left-container .grid-item {
+    margin-right: 15px;
+  }
+
+  #Testimonial-1,
+  #Testimonial-4{
+    flex-basis: 65%;
+  }
+
+  #Testimonial-2,
+  #Testimonial-3{
+    flex-basis: 35%;
+  }
+
+  #Testimonial-5 {
+    flex-basis: 20%;
+  }
+}
